@@ -1,0 +1,28 @@
+.header {
+  background-color: #fffbf8;
+  padding: 5px;
+  box-shadow: 3px 3px 8px #d4d4d4;
+}
+
+.Sheared-Color {
+  color: #15027162 !important;
+  ;
+}
+
+.brand {
+  color: #15027193 !important;
+}
+.Sign-Login {
+  background-color: transparent;
+  color: #ff7700;
+  border: 1px solid #ff7700;
+  padding: 6px 20px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.Sign-Login:hover {
+  background-color: #ff7700;
+  color: white;
+  transition: .8s all ease-in-out;
+}
