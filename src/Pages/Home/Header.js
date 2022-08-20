@@ -21,6 +21,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/about" className="Sheared-Color">About</Nav.Link>
             <Nav.Link as={Link} to="/services" className="Sheared-Color">Services</Nav.Link>
             <Nav.Link as={Link} to="/reviews" className="Sheared-Color">Reviews</Nav.Link>
+            <Nav.Link as={Link} to="/course" className="Sheared-Color">Courses</Nav.Link>
             {
               user?.displayName === null ?
                 <h6 className="userDisplay-name">Rohit Sharma</h6> :

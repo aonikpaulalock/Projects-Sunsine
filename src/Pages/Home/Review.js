@@ -8,7 +8,9 @@ const Review = ({ review }) => {
       <div className="reviews-posion"></div>
       <div className="col-lg-4 g-4 col-md-6">
         <div className="reviews-inner  p-5">
-          <ReviewIcon />
+            <div className="ps-5">
+            <ReviewIcon/> 
+            </div>
           <div className="card-body">
             <p className="review-text">{des}</p>
           </div>

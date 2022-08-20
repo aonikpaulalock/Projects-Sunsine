@@ -9,6 +9,7 @@ import Services from './Pages/Home/Services';
 import Reviews from './Pages/Home/Reviews';
 import Signup from './Pages/Home/Signup';
 import Signin from './Pages/Home/Signin';
+import Courses from './Pages/Home/Courses';
 import ProtectedRoute from './Pages/Home/ProtectedRoute';
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/signin" element={<Signin />}></Route>
+        <Route path="/course" element={<Courses />}></Route>
       </Routes>
       <Footer />
     </div>
