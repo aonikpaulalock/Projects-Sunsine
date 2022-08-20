@@ -1,0 +1,33 @@
+.card-background {
+  /* background: #141125; */
+  border-radius: 5px;
+  padding: 15px;
+}
+.image-service {
+  display: block;
+  width: 60%;
+  height: 50%;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.tainer-heading {
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin:8px 0 0 0 ;
+  color: #f58859;
+  text-align: center;
+}
+
+.tainer-sub-heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #bcb8d0;
+  text-align: center;
+}

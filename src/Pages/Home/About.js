@@ -10,14 +10,14 @@ const abouts = [
 const About = () => {
   return (
     <div className="container my-5 pt-5">
-      <div className="about-heading">
-        <h6>BEST LEARNING PLATFORM</h6>
-        <h1>Why We Are The Best</h1>
+      <div>
+        <h6 className="share-sub-title">BEST LEARNING PLATFORM</h6>
+        <h1 className="share-main-title">Why We Are The Best</h1>
       </div>
       <div className="row">
         {
           abouts.map(about =>
-            <div className="col-lg-4 mt-5 col-md-6">
+            <div className="col-lg-4 mt-5 col-md-6" key={about.id}>
               <div className="card border-0 p-4 gap-2 shadow">
                 <img className="img-content shadow" src={about.img} alt=""/>
                 <div className="card-body p-0">
