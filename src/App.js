@@ -10,7 +10,6 @@ import Reviews from './Pages/Home/Reviews';
 import Signup from './Pages/Home/Signup';
 import Signin from './Pages/Home/Signin';
 import ProtectedRoute from './Pages/Home/ProtectedRoute';
-import ReviewIcon from './Pages/Home/ReviewIcon';
 function App() {
   return (
     <div>
