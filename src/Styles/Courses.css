@@ -31,3 +31,6 @@
   color: #0A071B;
   text-align: center;
 }
+.svg-icon {
+  cursor: pointer;
+}

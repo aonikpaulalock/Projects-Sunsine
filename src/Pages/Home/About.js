@@ -2,9 +2,9 @@ import React from 'react';
 import "../../Styles/About.css"
 
 const abouts = [
-  { id: "1", name: "High Quality Courses", des: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci", img: "https://i.ibb.co/W0ZQJFw/garenty.png" },
-  { id: "2", name: "Expert Instructors", des: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci", img: "https://i.ibb.co/Bt4fNMm/Expert.png" },
-  { id: "3", name: "Life Time Access", des: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci", img: "https://i.ibb.co/TTHHYvY/Access.png" }
+  { id: "1", name: "High Quality Courses", des: "The quality of the courses has created a lot of interest among the students", img: "https://i.ibb.co/W0ZQJFw/garenty.png" },
+  { id: "2", name: "Expert Instructors .", des: "The courses are conducted by various experienced Instructors", img: "https://i.ibb.co/Bt4fNMm/Expert.png" },
+  { id: "3", name: "Life Time Access . ", des: "The course will have lifetime access and can be revisited at any time .", img: "https://i.ibb.co/TTHHYvY/Access.png" }
 ]
 
 const About = () => {
