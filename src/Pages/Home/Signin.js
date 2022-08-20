@@ -4,16 +4,27 @@ import AuthenticationProvider from './AuthenticationProvider';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.init';
+import loginImage from '../../Asset/Login/login.png'
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Loading from './Loading';
 const Signin = () => {
+    const navigate = useNavigate()
+  const location = useLocation()
   const [email, setEmail] = useState('')
   const [loginError, setloginError] = useState('')
+  const from = location?.state?.from?.pathname || '/';
+
   const [
     signInWithEmailAndPassword,
     user,
     error,
+    loading
   ] = useSignInWithEmailAndPassword(auth);
 
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+  if (loading) {
+    return <Loading />
+  }
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -27,7 +38,7 @@ const Signin = () => {
     event.target.reset()
   }
   if (user) {
-    // navigate(from, { replace: true })
+    navigate(from, { replace: true })
     console.log(user);
   }
   const handleEmail = (e) => {
@@ -36,27 +47,41 @@ const Signin = () => {
   const handlePasswordReset = async (e) => {
     await sendPasswordResetEmail(email);
   }
- 
+
   return (
-    <Form className="form-container" onSubmit={handleLoginSubmit}>
-      <h2 className="heding-signup">Signin Account</h2>
-      <Form.Group className="input-name">
-        <Form.Control type="email" name="email" placeholder="Enter Email"
-          className="input"
-          onChange={handleEmail}
-          required
-          autoComplete='off'
-        />
-      </Form.Group>
-      <Form.Group className="input-name">
-        <Form.Control type="password" name="password" placeholder="Password" className="input" required />
-      </Form.Group>
-      <h6 className='text-center text-danger mt-3 mb-0 fs-5'>{loginError}</h6>
-      <button type="submit" className="Signup-Button">Sign In</button>
-      <AuthenticationProvider />
-      <h6 className="forget-password" onClick={handlePasswordReset}>Forgot Password?</h6>
-      <h5 className="text-center text-danger mt-3 mb-0 fs-5">{error?.message}</h5>
-    </Form>
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-6">
+          <Form className="form-container" onSubmit={handleLoginSubmit}>
+            <h2 className="heding-signup">Signin Account</h2>
+            <Form.Group className="input-name">
+              <Form.Control type="email" name="email" placeholder="Enter Email"
+                className="input"
+                onChange={handleEmail}
+                required
+                autoComplete='off'
+              />
+            </Form.Group>
+            <Form.Group className="input-name">
+              <Form.Control type="password" name="password" placeholder="Password" className="input" required />
+            </Form.Group>
+            <h6 className='text-center text-danger mt-3 mb-0 fs-5'>{loginError}</h6>
+            <button type="submit" className="Signup-Button">Sign In</button>
+            <AuthenticationProvider />
+            <h6 className="forget-password" onClick={handlePasswordReset}>Forgot Password?</h6>
+            <h5 className="text-center text-danger mt-3 mb-0 fs-5">{error?.message}</h5>
+          </Form>
+        </div>
+        <div className="col-lg-6 d-flex  flex-column justify-content-center align-items-center">
+          <h5 className="acount-heading">Already have an account ?
+            <Link to="/signup"> Signin</Link>
+          </h5>
+          <img src={loginImage} alt="" className="img-fluid" />
+          <p className="Privacy-policy">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+        </div>
+      </div>
+    </div>
+
   );
 };
 

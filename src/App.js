@@ -9,17 +9,22 @@ import Services from './Pages/Home/Services';
 import Reviews from './Pages/Home/Reviews';
 import Signup from './Pages/Home/Signup';
 import Signin from './Pages/Home/Signin';
+import ProtectedRoute from './Pages/Home/ProtectedRoute';
 function App() {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/services" element={<Services/>}></Route>
-        <Route path="/reviews" element={<Reviews/>}></Route>
-        <Route path="/signup" element={<Signup/>}></Route>
-        <Route path="/signin" element={<Signin/>}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/services" element={
+          <ProtectedRoute>
+            <Services />
+          </ProtectedRoute>
+        }></Route>
+        <Route path="/reviews" element={<Reviews />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/signin" element={<Signin />}></Route>
       </Routes>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 .header {
-  background-color: #fffbf8;
+  background-color: #ffffff;
   padding: 5px;
   box-shadow: 3px 3px 8px #d4d4d4;
 }
@@ -25,4 +25,9 @@
   background-color: #F58859;
   color: white;
   transition: .8s all ease-in-out;
+}
+.logout-button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 }

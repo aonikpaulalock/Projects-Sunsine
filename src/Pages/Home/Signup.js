@@ -6,6 +6,7 @@ import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import loginImage from '../../Asset/Login/login.png'
 import auth from '../../Firebase.init';
 import "../../Styles/Form.css"
+import { Link } from 'react-router-dom';
 const Signup = () => {
   const [error, setError] = useState('')
   const [updateProfile] = useUpdateProfile(auth);
@@ -78,8 +79,12 @@ const Signup = () => {
             <AuthenticationProvider />
           </Form>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 d-flex  flex-column justify-content-center align-items-center">
+          <h5 className="acount-heading">Create Have An Account ?
+            <Link to="/signin"> Signup</Link>
+          </h5>
           <img src={loginImage} alt="" className="img-fluid" />
+          <p className="Privacy-policy">By signing up, you agree to our Terms & conditions, Privacy policy</p>
         </div>
       </div>
     </div>
