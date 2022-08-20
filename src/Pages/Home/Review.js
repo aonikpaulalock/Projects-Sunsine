@@ -7,6 +7,7 @@ const Review = ({ review }) => {
       <div className="reviews-posion"></div>
       <div className="col-lg-4 g-4 col-md-6">
         <div className="reviews-inner">
+          
           <div className="card-body p-4">
             <p className="review-text">{des}</p>
           </div>
