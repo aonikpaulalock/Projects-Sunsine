@@ -1,15 +1,15 @@
 .form-container {
-  padding: 2.6rem 0 3.6rem 3.6rem;
+  padding: 26px 0 36px 36px;
 }
 
 .heding-signup {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3.1rem;
+  font-size: 40px;
+  line-height: 55px;
   color: #000000;
-  margin-bottom: 2.6rem;
+  margin-bottom: 26px;
 }
 
 .input-name {
@@ -20,42 +20,43 @@
   border-radius: 0;
   background: #F7F8FA;
   border: 1px solid #D9D9DB;
-  padding: 1.5rem 1.3rem;
+  padding: 20px 20px;
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.6rem;
+  font-size: 20px;
+  line-height: 28px;
   color: #8A8A8A;
+  margin-bottom: 10px;
 }
 
 .Signup-Button {
   width: 95%;
-  margin: 1.9rem 0 2.4rem 0;
+  margin: 19px 0 24px 0;
   font-family: 'IBM Plex Sans';
   font-style: normal;
   border: 0;
   outline: 0;
   font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center;
   color: #FFFFFF;
-  padding: 1.2rem;
+  padding: 15px;
   background: #F58859;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
 
 .image-content {
-  margin-top: 4rem;
-  padding-right: 3.6rem;
+  margin-top: 40px;
+  padding-right: 36px;
 }
 
 .Privacy-policy {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 14px;
   text-align: right;
   color: #000000;
   opacity: 0.6;
@@ -65,8 +66,8 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.7rem;
+  font-size: 20px;
+  line-height: 31px;
   text-align: right;
   color: #3D3D3D;
 }
@@ -81,12 +82,12 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 13px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: -0.008rem;
   color: #000000;
-  margin-top: 2.3rem;
+  margin-top: 23px;
   cursor: pointer;
 }
 
@@ -100,8 +101,8 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4rem !important;
-  line-height: 1.8rem;
+  font-size: 14px !important;
+  line-height: 18px;
   color: #000000;
   margin-bottom: 0;
   cursor: pointer;

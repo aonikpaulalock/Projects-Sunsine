@@ -30,4 +30,11 @@
   border: 0;
   outline: 0;
   background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.hide-padding {
+padding: 0 !important;
 }

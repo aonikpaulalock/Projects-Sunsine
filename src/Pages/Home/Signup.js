@@ -39,7 +39,7 @@ const Signup = () => {
     console.log(user);
   }
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-lg-6">
           <Form className="form-container" onSubmit={handleSubmit}>

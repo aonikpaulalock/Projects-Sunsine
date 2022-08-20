@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="frist-back">
         <div className="container">
           <div className="frist-content">
-            <h1 className="footer-heading">Everst</h1>
+            <h1 className="footer-heading">Future School</h1>
             <div className="footer-sub-heading">
               <Link to="/">Home</Link>
               <Link to="/aboutpage">About</Link>
@@ -21,12 +21,7 @@ const Footer = () => {
       <div className="second-back">
         <div className="container">
           <div className="second-foooter-content">
-            <h6 className="second-footer-heading">© Template by <span>Flowbase</span> - Powered by <span>Webflow</span></h6>
-            <div className="second-footer-sub-heading">
-              <span>Syle Giide</span>
-              <span>Changelog</span>
-              <span>Licence</span>
-            </div>
+            <h6 className="second-footer-heading">© Copyright by <span>Future School</span></h6>
           </div>
         </div>
       </div>
