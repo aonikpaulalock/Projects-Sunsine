@@ -1,14 +1,15 @@
 import React from 'react';
 import "../../Styles/Review.css"
+import ReviewIcon from './ReviewIcon';
 const Review = ({ review }) => {
   const { des, img, name, desination } = review;
   return (
     <>
       <div className="reviews-posion"></div>
       <div className="col-lg-4 g-4 col-md-6">
-        <div className="reviews-inner">
-          
-          <div className="card-body p-4">
+        <div className="reviews-inner  p-5">
+          <ReviewIcon />
+          <div className="card-body">
             <p className="review-text">{des}</p>
           </div>
           <div className="d-flex ps-4 pb-4">

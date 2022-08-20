@@ -11,9 +11,8 @@ const Footer = () => {
             <div className="footer-sub-heading">
               <Link to="/">Home</Link>
               <Link to="/aboutpage">About</Link>
-              <Link to="/servicePages">Services</Link>
-              <Link to="/blogs">Blog</Link>
-              <Link to="/contactPage">Contact</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/reviews">Reviews</Link>
             </div>
           </div>
         </div>

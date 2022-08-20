@@ -4,7 +4,11 @@ import Facebook from "../../Asset/Login/Facebook-f_Logo-Blue-Logo.wine.svg"
 import "../../Styles/AuthenticationProvider.css"
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.init';
+import { useLocation, useNavigate } from 'react-router-dom';
 const AuthenticationProvider = () => {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const from = location?.state?.from?.pathname || '/';
   let errorStore;
 
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -13,7 +17,7 @@ const AuthenticationProvider = () => {
     errorStore = <p className="text-danger">Error: {error?.message}</p>
   }
   if (user) {
-    console.log(user)
+    navigate(from, { replace: true })
   }
   if (loading) {
     return;
