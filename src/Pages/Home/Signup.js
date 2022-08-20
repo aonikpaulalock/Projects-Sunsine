@@ -81,7 +81,7 @@ const Signup = () => {
         </div>
         <div className="col-lg-6 d-flex  flex-column justify-content-center align-items-center">
           <h5 className="acount-heading">Create Have An Account ?
-            <Link to="/signin"> Signup</Link>
+            <Link to="/signin" className="toggle-form"> Signup</Link>
           </h5>
           <img src={loginImage} alt="" className="img-fluid" />
           <p className="Privacy-policy">By signing up, you agree to our Terms & conditions, Privacy policy</p>

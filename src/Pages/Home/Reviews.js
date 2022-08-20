@@ -4,14 +4,12 @@ import Review from './Review';
 import review from "../../Review/reviews1.png"
 import review2 from "../../Review/reviews2.png"
 import review3 from "../../Review/reviews3.png"
-import { Navigate, useNavigate } from 'react-router-dom';
 const reviews = [
   { id: 1, name: "Carter Franci", des: "The courses are excellent and the instructor's understanding is really visionary which helps a lot in understanding difficult topics", desination: "USA", img: review },
   { id: 2, name: "Pretty Jints", des: "I didn't understand JavaScript problem-solving but the JavaScript tasks were at a really high level which helped my skill development a lot..", desination: "India", img: review2 },
   { id: 3, name: "Mss.Sabonti", des: "At first I didn't have that much skill but after doing this course I learned a lot of skills and the pain is really amazing", desination: "Bangladesh", img: review3 }
 ]
 const Reviews = () => {
-  const navigate = useNavigate()
   return (
     <div className="reviews">
       <div className="container">

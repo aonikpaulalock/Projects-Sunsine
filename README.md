@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+## Sunsine Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live Links
+https://sunsine-projects.web.app
+
+## Feature
+* This is an online course buying website.
+* User must login by verifying email password and google authentication.
+* If the user is not logged in, then if the service route is clicked, then the user will be taken directly to the login page, although as long as the user is logged in, the user will be taken to the service route.
+
+## Technology
+* React
+* React-Router
+* React-Boostrap
+* Boostrap
+* Firebase
+* React-Firebase-Hooks
 
 ## Available Scripts
 

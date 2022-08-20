@@ -13,6 +13,7 @@ const Footer = () => {
               <Link to="/aboutpage">About</Link>
               <Link to="/services">Services</Link>
               <Link to="/reviews">Reviews</Link>
+              <Link to="/courses">Courses</Link>
             </div>
           </div>
         </div>
