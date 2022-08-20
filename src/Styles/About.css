@@ -1,0 +1,44 @@
+.about-heading h1 {
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+  color: #0A071B;
+}
+.about-heading h6 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #f58859;
+}
+.img-content {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border: 2px solid #DDD;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #0A071B;
+  margin-top: 15px;
+}
+
+.text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #5b5675;
+  margin-top: 16px;
+  text-align: center;
+}

@@ -1,0 +1,113 @@
+.banner-bg {
+  background-color: #0A071B;
+  padding: 100px 0 40px 0;
+
+}
+
+.banner-sub-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCB8D0;
+}
+
+.banner-main-heading {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 90px;
+  color: #FFFFFF;
+  margin-bottom:0px ; 
+}
+.banner-peragraph {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #BCB8D0;
+  margin: 40px 0;
+}
+.Find-Course-button {
+  padding: 20px 40px ;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background: #F58859;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.Free-Trial-button {
+  padding: 20px 50px ;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2A263F;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-left: 30px;
+}
+
+
+/* Media qureis */
+@media (max-width:990px) {
+  .banner-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width:635px) {
+  .banner-main-heading {
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .banner-sub-heading {
+    text-align: center;
+  }
+  .banner-peragraph {
+    text-align: center;
+  }
+    
+
+  .button-gap {
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+
+  .home-banner-content {
+    padding: 35px;
+  }
+}
+
+@media (max-width:582px) {
+  .banner-bg {
+    padding-top: 30px;
+  }
+  .banner-main-heading {
+    font-size: 45px;
+    line-height: 73px;
+  }
+  .home-banner-content {
+    padding: 15px;
+  }
+}
+@media (max-width:480px) {
+  .Free-Trial-button,.Find-Course-button {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px auto;
+  }
+  
+}
